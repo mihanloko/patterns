@@ -5,7 +5,8 @@
 #ifndef PATTERNS_PASSENGER_H
 #define PATTERNS_PASSENGER_H
 
-#include <vector>
+#include <map>
+#include <string>
 
 #include "../documents/Document.h"
 #include "IVisitingServices.h"
@@ -17,8 +18,12 @@ using namespace std;
  */
 class Passenger {
 private:
-    vector<Document> documents;
+    map<string, Document*> documents;
+    Ticket* ticket;
     IVisitingServices* visitingServices;
+public:
+    Passenger(IVisitingServices* iVisitingServices);
+    void visit();
 };
 
 

@@ -16,6 +16,7 @@ private:
     Flight* flight;
 public:
     Flight *getFlight() const;
+    Ticket();
 };
 
 

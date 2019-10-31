@@ -6,6 +6,6 @@
 
 void OutgoingPassenger::visit(Ticket* ticket) {
     for (const string& service: ticket->getFlight()->getRoute()) {
-        cout << "i am in " << service << endl;
+        logger->info("I am visiting " + service);
     }
 }

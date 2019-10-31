@@ -7,6 +7,6 @@
 void IncomingPassenger::visit(Ticket* ticket) {
     vector<string> route = ticket->getFlight()->getRoute();
     for (auto service = route.rbegin(); service != route.rend(); service++) {
-        cout << "i am in " << *service << endl;
+        logger->info("I am visiting " + *service);
     }
 }

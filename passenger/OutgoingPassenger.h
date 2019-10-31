@@ -9,6 +9,7 @@
 #include <iostream>
 
 #include "IVisitingServices.h"
+#include "../Logger.h"
 
 using namespace std;
 
@@ -16,6 +17,8 @@ using namespace std;
  * Класс, описывающий поведение пассажира, который пришел в аэропорт и собирается лететь
  */
 class OutgoingPassenger : public IVisitingServices {
+private:
+    Logger* logger = new Logger("OutgoingPassenger");
 public:
     void visit(Ticket* ticket) override;
 };

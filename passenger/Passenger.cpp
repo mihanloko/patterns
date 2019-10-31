@@ -3,3 +3,12 @@
 //
 
 #include "Passenger.h"
+
+Passenger::Passenger(IVisitingServices *iVisitingServices) {
+    this->visitingServices = iVisitingServices;
+    ticket = new Ticket();
+}
+
+void Passenger::visit() {
+    visitingServices->visit(ticket);
+}
