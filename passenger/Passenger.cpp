@@ -12,3 +12,7 @@ Passenger::Passenger(IVisitingServices *iVisitingServices) {
 void Passenger::visit() {
     visitingServices->visit(ticket);
 }
+
+map<string, Document *> Passenger::getDocuments() {
+    return documents;
+}

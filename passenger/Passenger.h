@@ -24,6 +24,8 @@ private:
 public:
     Passenger(IVisitingServices* iVisitingServices);
     void visit();
+
+    map<string, Document *> getDocuments();
 };
 
 

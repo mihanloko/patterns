@@ -11,9 +11,9 @@ Flight *Ticket::getFlight() const {
 
 Ticket::Ticket() {
     vector<string> route;
-    route.push_back("a");
-    route.push_back("b");
-    route.push_back("c");
+    route.emplace_back("first service");
+    route.emplace_back("second service");
+    route.emplace_back("third service");
     flight = new DomesticFlight(route);
 
 }
