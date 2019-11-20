@@ -5,18 +5,22 @@
 #ifndef PATTERNS_TICKET_H
 #define PATTERNS_TICKET_H
 
-#include "Document.h"
-#include "../flights/Flight.h"
+#include "../Document.h"
+#include "../../flights/Flight.h"
 
 /**
  * Билет на рейс
  */
 class Ticket : public Document {
-private:
+protected:
     Flight* flight;
 public:
     Flight *getFlight() const;
     Ticket();
+
+    virtual int getCost();
+
+    virtual int getAllowedCargo();
 };
 
 

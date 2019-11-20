@@ -5,7 +5,7 @@
 #ifndef PATTERNS_IVISITINGSERVICES_H
 #define PATTERNS_IVISITINGSERVICES_H
 
-#include "../documents/Ticket.h"
+#include "../documents/Tickets/Ticket.h"
 
 /**
  * Интерфейс поведения пассажира в аэропорту
