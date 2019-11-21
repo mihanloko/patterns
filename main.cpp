@@ -45,7 +45,7 @@ int main() {
     groupOfServices->addService(innerGroupOfServices);
     groupOfServices->addService(service4);
 
-    for (auto i = groupOfServices->getForwardIterator(); i->hasNext();) {
+    for (auto i = groupOfServices->getBackwardIterator(); i->hasNext();) {
         i->getNext()->serve(passenger);
     }
 
