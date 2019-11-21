@@ -6,11 +6,23 @@
 #define PATTERNS_COMPULSORYSERVICE_H
 
 
-#include "../passenger/Passenger.h"
+#include "../iterator/Iterable.h"
+#include "ICompulsory.h"
 
-class CompulsoryService {
+
+class CompulsoryService : public Iterable, public ICompulsory {
+protected:
+    int priority;
 public:
-    virtual void serve(Passenger *passenger) = 0;
+    CompulsoryService(int priority);
+
+    Iterator *getForwardIterator() override;
+
+    Iterator *getBackwardIterator() override;
+
+    virtual int getPriority() override;
+
+    vector<ICompulsory *> getServices() override;
 };
 
 
