@@ -123,6 +123,87 @@ patterns/fast:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/build
 .PHONY : patterns/fast
 
+Bridge/PDFPrinter.o: Bridge/PDFPrinter.cpp.o
+
+.PHONY : Bridge/PDFPrinter.o
+
+# target to build an object file
+Bridge/PDFPrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PDFPrinter.cpp.o
+.PHONY : Bridge/PDFPrinter.cpp.o
+
+Bridge/PDFPrinter.i: Bridge/PDFPrinter.cpp.i
+
+.PHONY : Bridge/PDFPrinter.i
+
+# target to preprocess a source file
+Bridge/PDFPrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PDFPrinter.cpp.i
+.PHONY : Bridge/PDFPrinter.cpp.i
+
+Bridge/PDFPrinter.s: Bridge/PDFPrinter.cpp.s
+
+.PHONY : Bridge/PDFPrinter.s
+
+# target to generate assembly for a file
+Bridge/PDFPrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PDFPrinter.cpp.s
+.PHONY : Bridge/PDFPrinter.cpp.s
+
+Bridge/PaperPrinter.o: Bridge/PaperPrinter.cpp.o
+
+.PHONY : Bridge/PaperPrinter.o
+
+# target to build an object file
+Bridge/PaperPrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PaperPrinter.cpp.o
+.PHONY : Bridge/PaperPrinter.cpp.o
+
+Bridge/PaperPrinter.i: Bridge/PaperPrinter.cpp.i
+
+.PHONY : Bridge/PaperPrinter.i
+
+# target to preprocess a source file
+Bridge/PaperPrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PaperPrinter.cpp.i
+.PHONY : Bridge/PaperPrinter.cpp.i
+
+Bridge/PaperPrinter.s: Bridge/PaperPrinter.cpp.s
+
+.PHONY : Bridge/PaperPrinter.s
+
+# target to generate assembly for a file
+Bridge/PaperPrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/PaperPrinter.cpp.s
+.PHONY : Bridge/PaperPrinter.cpp.s
+
+Bridge/TicketPrinter.o: Bridge/TicketPrinter.cpp.o
+
+.PHONY : Bridge/TicketPrinter.o
+
+# target to build an object file
+Bridge/TicketPrinter.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/TicketPrinter.cpp.o
+.PHONY : Bridge/TicketPrinter.cpp.o
+
+Bridge/TicketPrinter.i: Bridge/TicketPrinter.cpp.i
+
+.PHONY : Bridge/TicketPrinter.i
+
+# target to preprocess a source file
+Bridge/TicketPrinter.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/TicketPrinter.cpp.i
+.PHONY : Bridge/TicketPrinter.cpp.i
+
+Bridge/TicketPrinter.s: Bridge/TicketPrinter.cpp.s
+
+.PHONY : Bridge/TicketPrinter.s
+
+# target to generate assembly for a file
+Bridge/TicketPrinter.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Bridge/TicketPrinter.cpp.s
+.PHONY : Bridge/TicketPrinter.cpp.s
+
 Logger.o: Logger.cpp.o
 
 .PHONY : Logger.o
@@ -149,6 +230,33 @@ Logger.s: Logger.cpp.s
 Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Logger.cpp.s
 .PHONY : Logger.cpp.s
+
+commercial/CommercialService.o: commercial/CommercialService.cpp.o
+
+.PHONY : commercial/CommercialService.o
+
+# target to build an object file
+commercial/CommercialService.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/CommercialService.cpp.o
+.PHONY : commercial/CommercialService.cpp.o
+
+commercial/CommercialService.i: commercial/CommercialService.cpp.i
+
+.PHONY : commercial/CommercialService.i
+
+# target to preprocess a source file
+commercial/CommercialService.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/CommercialService.cpp.i
+.PHONY : commercial/CommercialService.cpp.i
+
+commercial/CommercialService.s: commercial/CommercialService.cpp.s
+
+.PHONY : commercial/CommercialService.s
+
+# target to generate assembly for a file
+commercial/CommercialService.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/CommercialService.cpp.s
+.PHONY : commercial/CommercialService.cpp.s
 
 compulsory/BaggageService.o: compulsory/BaggageService.cpp.o
 
@@ -284,6 +392,33 @@ compulsory/GroupOfServices.s: compulsory/GroupOfServices.cpp.s
 compulsory/GroupOfServices.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/compulsory/GroupOfServices.cpp.s
 .PHONY : compulsory/GroupOfServices.cpp.s
+
+compulsory/InformationExpert.o: compulsory/InformationExpert.cpp.o
+
+.PHONY : compulsory/InformationExpert.o
+
+# target to build an object file
+compulsory/InformationExpert.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/compulsory/InformationExpert.cpp.o
+.PHONY : compulsory/InformationExpert.cpp.o
+
+compulsory/InformationExpert.i: compulsory/InformationExpert.cpp.i
+
+.PHONY : compulsory/InformationExpert.i
+
+# target to preprocess a source file
+compulsory/InformationExpert.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/compulsory/InformationExpert.cpp.i
+.PHONY : compulsory/InformationExpert.cpp.i
+
+compulsory/InformationExpert.s: compulsory/InformationExpert.cpp.s
+
+.PHONY : compulsory/InformationExpert.s
+
+# target to generate assembly for a file
+compulsory/InformationExpert.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/compulsory/InformationExpert.cpp.s
+.PHONY : compulsory/InformationExpert.cpp.s
 
 compulsory/PassportControl.o: compulsory/PassportControl.cpp.o
 
@@ -852,6 +987,60 @@ passenger/Passenger.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/passenger/Passenger.cpp.s
 .PHONY : passenger/Passenger.cpp.s
 
+terminal/Terminal.o: terminal/Terminal.cpp.o
+
+.PHONY : terminal/Terminal.o
+
+# target to build an object file
+terminal/Terminal.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/Terminal.cpp.o
+.PHONY : terminal/Terminal.cpp.o
+
+terminal/Terminal.i: terminal/Terminal.cpp.i
+
+.PHONY : terminal/Terminal.i
+
+# target to preprocess a source file
+terminal/Terminal.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/Terminal.cpp.i
+.PHONY : terminal/Terminal.cpp.i
+
+terminal/Terminal.s: terminal/Terminal.cpp.s
+
+.PHONY : terminal/Terminal.s
+
+# target to generate assembly for a file
+terminal/Terminal.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/Terminal.cpp.s
+.PHONY : terminal/Terminal.cpp.s
+
+terminal/TerminalBuilder.o: terminal/TerminalBuilder.cpp.o
+
+.PHONY : terminal/TerminalBuilder.o
+
+# target to build an object file
+terminal/TerminalBuilder.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/TerminalBuilder.cpp.o
+.PHONY : terminal/TerminalBuilder.cpp.o
+
+terminal/TerminalBuilder.i: terminal/TerminalBuilder.cpp.i
+
+.PHONY : terminal/TerminalBuilder.i
+
+# target to preprocess a source file
+terminal/TerminalBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/TerminalBuilder.cpp.i
+.PHONY : terminal/TerminalBuilder.cpp.i
+
+terminal/TerminalBuilder.s: terminal/TerminalBuilder.cpp.s
+
+.PHONY : terminal/TerminalBuilder.s
+
+# target to generate assembly for a file
+terminal/TerminalBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/terminal/TerminalBuilder.cpp.s
+.PHONY : terminal/TerminalBuilder.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -861,9 +1050,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... patterns"
 	@echo "... edit_cache"
+	@echo "... Bridge/PDFPrinter.o"
+	@echo "... Bridge/PDFPrinter.i"
+	@echo "... Bridge/PDFPrinter.s"
+	@echo "... Bridge/PaperPrinter.o"
+	@echo "... Bridge/PaperPrinter.i"
+	@echo "... Bridge/PaperPrinter.s"
+	@echo "... Bridge/TicketPrinter.o"
+	@echo "... Bridge/TicketPrinter.i"
+	@echo "... Bridge/TicketPrinter.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... commercial/CommercialService.o"
+	@echo "... commercial/CommercialService.i"
+	@echo "... commercial/CommercialService.s"
 	@echo "... compulsory/BaggageService.o"
 	@echo "... compulsory/BaggageService.i"
 	@echo "... compulsory/BaggageService.s"
@@ -879,6 +1080,9 @@ help:
 	@echo "... compulsory/GroupOfServices.o"
 	@echo "... compulsory/GroupOfServices.i"
 	@echo "... compulsory/GroupOfServices.s"
+	@echo "... compulsory/InformationExpert.o"
+	@echo "... compulsory/InformationExpert.i"
+	@echo "... compulsory/InformationExpert.s"
 	@echo "... compulsory/PassportControl.o"
 	@echo "... compulsory/PassportControl.i"
 	@echo "... compulsory/PassportControl.s"
@@ -942,6 +1146,12 @@ help:
 	@echo "... passenger/Passenger.o"
 	@echo "... passenger/Passenger.i"
 	@echo "... passenger/Passenger.s"
+	@echo "... terminal/Terminal.o"
+	@echo "... terminal/Terminal.i"
+	@echo "... terminal/Terminal.s"
+	@echo "... terminal/TerminalBuilder.o"
+	@echo "... terminal/TerminalBuilder.i"
+	@echo "... terminal/TerminalBuilder.s"
 .PHONY : help
 
 

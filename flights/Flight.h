@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <string>
+#include <ctime>
 
 using namespace std;
 
@@ -16,6 +17,10 @@ using namespace std;
 class Flight {
 protected:
     vector<string> route;
+    string from;
+    string to;
+    time_t time;
+
 public:
     const virtual vector<string> &getRoute() const;
 };

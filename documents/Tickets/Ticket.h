@@ -14,6 +14,9 @@
 class Ticket : public Document {
 protected:
     Flight* flight;
+    int cost;
+    int allowedCargo;
+    int seatId;
 public:
     Flight *getFlight() const;
     Ticket();
