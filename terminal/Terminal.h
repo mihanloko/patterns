@@ -13,11 +13,12 @@ using namespace std;
 
 class Terminal {
 private:
-    vector<CompulsoryService *> compulsoryServices;
+    CompulsoryService *compulsoryServices;
     vector<CommercialService *> commercialServices;
-    bool isCafeEnabled, isBankEnabled, isWaitingRoomEnabled, isHotelEnabled;
 public:
     void visit(Passenger *passenger);
+
+    void addCommercialService(CommercialService *commercialService);
     Terminal();
 };
 

@@ -7,3 +7,5 @@
 void PlaceOfBoarding::serve(Passenger *passenger) {
 
 }
+
+PlaceOfBoarding::PlaceOfBoarding(int priority) : CompulsoryService(priority) {}

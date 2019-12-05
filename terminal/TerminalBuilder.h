@@ -11,6 +11,7 @@
 class TerminalBuilder {
 private:
     Terminal *terminal;
+    bool isCafeEnabled, isBankEnabled, isWaitingRoomEnabled, isHotelEnabled;
 public:
     void reset();
     Terminal* getTerminal();

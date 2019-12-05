@@ -3,3 +3,9 @@
 //
 
 #include "PassportControl.h"
+
+PassportControl::PassportControl(int priority) : CompulsoryService(priority) {}
+
+void PassportControl::serve(Passenger *passenger) {
+
+}

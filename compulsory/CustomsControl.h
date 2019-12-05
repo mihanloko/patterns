@@ -9,7 +9,10 @@
 #include "CompulsoryService.h"
 
 class CustomsControl : public CompulsoryService {
+public:
+    CustomsControl(int priority);
 
+    void serve(Passenger *passenger) override;
 };
 
 

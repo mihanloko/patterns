@@ -231,6 +231,60 @@ Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/Logger.cpp.s
 .PHONY : Logger.cpp.s
 
+commercial/Bank.o: commercial/Bank.cpp.o
+
+.PHONY : commercial/Bank.o
+
+# target to build an object file
+commercial/Bank.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Bank.cpp.o
+.PHONY : commercial/Bank.cpp.o
+
+commercial/Bank.i: commercial/Bank.cpp.i
+
+.PHONY : commercial/Bank.i
+
+# target to preprocess a source file
+commercial/Bank.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Bank.cpp.i
+.PHONY : commercial/Bank.cpp.i
+
+commercial/Bank.s: commercial/Bank.cpp.s
+
+.PHONY : commercial/Bank.s
+
+# target to generate assembly for a file
+commercial/Bank.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Bank.cpp.s
+.PHONY : commercial/Bank.cpp.s
+
+commercial/Cafe.o: commercial/Cafe.cpp.o
+
+.PHONY : commercial/Cafe.o
+
+# target to build an object file
+commercial/Cafe.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Cafe.cpp.o
+.PHONY : commercial/Cafe.cpp.o
+
+commercial/Cafe.i: commercial/Cafe.cpp.i
+
+.PHONY : commercial/Cafe.i
+
+# target to preprocess a source file
+commercial/Cafe.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Cafe.cpp.i
+.PHONY : commercial/Cafe.cpp.i
+
+commercial/Cafe.s: commercial/Cafe.cpp.s
+
+.PHONY : commercial/Cafe.s
+
+# target to generate assembly for a file
+commercial/Cafe.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Cafe.cpp.s
+.PHONY : commercial/Cafe.cpp.s
+
 commercial/CommercialService.o: commercial/CommercialService.cpp.o
 
 .PHONY : commercial/CommercialService.o
@@ -257,6 +311,60 @@ commercial/CommercialService.s: commercial/CommercialService.cpp.s
 commercial/CommercialService.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/CommercialService.cpp.s
 .PHONY : commercial/CommercialService.cpp.s
+
+commercial/Hotel.o: commercial/Hotel.cpp.o
+
+.PHONY : commercial/Hotel.o
+
+# target to build an object file
+commercial/Hotel.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Hotel.cpp.o
+.PHONY : commercial/Hotel.cpp.o
+
+commercial/Hotel.i: commercial/Hotel.cpp.i
+
+.PHONY : commercial/Hotel.i
+
+# target to preprocess a source file
+commercial/Hotel.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Hotel.cpp.i
+.PHONY : commercial/Hotel.cpp.i
+
+commercial/Hotel.s: commercial/Hotel.cpp.s
+
+.PHONY : commercial/Hotel.s
+
+# target to generate assembly for a file
+commercial/Hotel.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/Hotel.cpp.s
+.PHONY : commercial/Hotel.cpp.s
+
+commercial/WaitingRoom.o: commercial/WaitingRoom.cpp.o
+
+.PHONY : commercial/WaitingRoom.o
+
+# target to build an object file
+commercial/WaitingRoom.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/WaitingRoom.cpp.o
+.PHONY : commercial/WaitingRoom.cpp.o
+
+commercial/WaitingRoom.i: commercial/WaitingRoom.cpp.i
+
+.PHONY : commercial/WaitingRoom.i
+
+# target to preprocess a source file
+commercial/WaitingRoom.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/WaitingRoom.cpp.i
+.PHONY : commercial/WaitingRoom.cpp.i
+
+commercial/WaitingRoom.s: commercial/WaitingRoom.cpp.s
+
+.PHONY : commercial/WaitingRoom.s
+
+# target to generate assembly for a file
+commercial/WaitingRoom.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/commercial/WaitingRoom.cpp.s
+.PHONY : commercial/WaitingRoom.cpp.s
 
 compulsory/BaggageService.o: compulsory/BaggageService.cpp.o
 
@@ -1062,9 +1170,21 @@ help:
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... commercial/Bank.o"
+	@echo "... commercial/Bank.i"
+	@echo "... commercial/Bank.s"
+	@echo "... commercial/Cafe.o"
+	@echo "... commercial/Cafe.i"
+	@echo "... commercial/Cafe.s"
 	@echo "... commercial/CommercialService.o"
 	@echo "... commercial/CommercialService.i"
 	@echo "... commercial/CommercialService.s"
+	@echo "... commercial/Hotel.o"
+	@echo "... commercial/Hotel.i"
+	@echo "... commercial/Hotel.s"
+	@echo "... commercial/WaitingRoom.o"
+	@echo "... commercial/WaitingRoom.i"
+	@echo "... commercial/WaitingRoom.s"
 	@echo "... compulsory/BaggageService.o"
 	@echo "... compulsory/BaggageService.i"
 	@echo "... compulsory/BaggageService.s"

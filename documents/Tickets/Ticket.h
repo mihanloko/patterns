@@ -17,6 +17,7 @@ protected:
     int cost;
     int allowedCargo;
     int seatId;
+    long long int id;
 public:
     Flight *getFlight() const;
     Ticket();

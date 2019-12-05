@@ -1,0 +1,9 @@
+bridge
+flyweight
+facade - 50/50
+information expert - ok
+
+builder - ok
+singleton - ok
+pool
+factory (method?)
