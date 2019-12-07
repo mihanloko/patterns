@@ -23,6 +23,8 @@ protected:
 
 public:
     const virtual vector<string> &getRoute() const;
+
+    Flight(const string &from, const string &to, time_t time);
 };
 
 

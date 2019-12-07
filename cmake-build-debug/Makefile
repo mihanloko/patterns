@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/92/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/92/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/mikhail/Документы/c_projects/patterns/cmake-bu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/92/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/98/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/92/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/98/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -798,6 +798,33 @@ documents/Tickets/TicketDecorator.cpp.s:
 	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/documents/Tickets/TicketDecorator.cpp.s
 .PHONY : documents/Tickets/TicketDecorator.cpp.s
 
+documents/Tickets/TicketPool.o: documents/Tickets/TicketPool.cpp.o
+
+.PHONY : documents/Tickets/TicketPool.o
+
+# target to build an object file
+documents/Tickets/TicketPool.cpp.o:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/documents/Tickets/TicketPool.cpp.o
+.PHONY : documents/Tickets/TicketPool.cpp.o
+
+documents/Tickets/TicketPool.i: documents/Tickets/TicketPool.cpp.i
+
+.PHONY : documents/Tickets/TicketPool.i
+
+# target to preprocess a source file
+documents/Tickets/TicketPool.cpp.i:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/documents/Tickets/TicketPool.cpp.i
+.PHONY : documents/Tickets/TicketPool.cpp.i
+
+documents/Tickets/TicketPool.s: documents/Tickets/TicketPool.cpp.s
+
+.PHONY : documents/Tickets/TicketPool.s
+
+# target to generate assembly for a file
+documents/Tickets/TicketPool.cpp.s:
+	$(MAKE) -f CMakeFiles/patterns.dir/build.make CMakeFiles/patterns.dir/documents/Tickets/TicketPool.cpp.s
+.PHONY : documents/Tickets/TicketPool.cpp.s
+
 documents/VisaAdapter.o: documents/VisaAdapter.cpp.o
 
 .PHONY : documents/VisaAdapter.o
@@ -1233,6 +1260,9 @@ help:
 	@echo "... documents/Tickets/TicketDecorator.o"
 	@echo "... documents/Tickets/TicketDecorator.i"
 	@echo "... documents/Tickets/TicketDecorator.s"
+	@echo "... documents/Tickets/TicketPool.o"
+	@echo "... documents/Tickets/TicketPool.i"
+	@echo "... documents/Tickets/TicketPool.s"
 	@echo "... documents/VisaAdapter.o"
 	@echo "... documents/VisaAdapter.i"
 	@echo "... documents/VisaAdapter.s"

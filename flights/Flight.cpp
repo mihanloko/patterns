@@ -7,3 +7,7 @@
 const vector<string> &Flight::getRoute() const {
     return route;
 }
+
+Flight::Flight(const string &from, const string &to, time_t time) :
+        from(from), to(to),
+        time(time) {}
