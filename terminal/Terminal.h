@@ -6,10 +6,13 @@
 #define PATTERNS_TERMINAL_H
 
 #include <vector>
-#include "../compulsory/CompulsoryService.h"
+//#include "../compulsory/CompulsoryService.h"
 #include "../commercial/CommercialService.h"
-
+#include "../terminal/Terminal.h"
 using namespace std;
+
+class CompulsoryService;
+class Passenger;
 
 class Terminal {
 private:
@@ -20,6 +23,8 @@ public:
 
     void addCommercialService(CommercialService *commercialService);
     Terminal();
+
+    CompulsoryService *getCompulsoryServices() const;
 };
 
 

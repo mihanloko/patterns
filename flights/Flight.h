@@ -8,8 +8,11 @@
 #include <vector>
 #include <string>
 #include <ctime>
+#include "../passport_control/CheckHandler.h"
 
 using namespace std;
+
+class CheckHandler;
 
 /**
  * Авиарейс, абстрактный класс
@@ -25,6 +28,10 @@ public:
     const virtual vector<string> &getRoute() const;
 
     Flight(const string &from, const string &to, time_t time);
+
+    virtual CheckHandler *getChain();
+
+    time_t getTime() const;
 };
 
 

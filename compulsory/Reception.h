@@ -12,7 +12,7 @@
 class Reception : public CompulsoryService {
 public:
     Reception(int priority);
-    void serve(Passenger *passenger) override;
+    bool serve(Passenger *passenger) override;
 
 private:
     InformationExpert *expert;

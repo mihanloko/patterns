@@ -3,3 +3,13 @@
 //
 
 #include "PassportAdapter.h"
+
+PassportAdapter::PassportAdapter() {}
+
+string PassportAdapter::getName() {
+    return "name";
+}
+
+string PassportAdapter::getNumber() {
+    return "number";
+}

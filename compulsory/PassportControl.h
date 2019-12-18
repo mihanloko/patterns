@@ -10,7 +10,7 @@
 
 class PassportControl : public CompulsoryService {
 public:
-    void serve(Passenger *passenger);
+    bool serve(Passenger *passenger) override;
 
     PassportControl(int priority);
 };

@@ -5,9 +5,10 @@
 #include "BaggageService.h"
 #include "../Logger.h"
 
-void BaggageService::serve(Passenger *passenger) {
+bool BaggageService::serve(Passenger *passenger) {
     Logger l("BaggageService");
     l.info("Served " + to_string(priority));
+    return true;
 }
 
 BaggageService::BaggageService(int priority) : CompulsoryService(priority) {

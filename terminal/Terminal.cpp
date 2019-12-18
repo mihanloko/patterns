@@ -30,5 +30,9 @@ void Terminal::addCommercialService(CommercialService *commercialService) {
 }
 
 void Terminal::visit(Passenger *passenger) {
+    passenger->visit(this);
+}
 
+CompulsoryService *Terminal::getCompulsoryServices() const {
+    return compulsoryServices;
 }

@@ -8,12 +8,14 @@
 
 #include "../passenger/Passenger.h"
 
+class Passenger;
+
 class ICompulsory {
 protected:
     virtual std::vector<ICompulsory *> getServices() = 0;
 
 public:
-    virtual void serve(Passenger *passenger) = 0;
+    virtual bool serve(Passenger *passenger) = 0;
 
     virtual int getPriority() = 0;
 };

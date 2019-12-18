@@ -9,6 +9,7 @@
 #include "../iterator/Iterable.h"
 #include "ICompulsory.h"
 
+class ICompulsory;
 
 class CompulsoryService : public Iterable, public ICompulsory {
 protected:

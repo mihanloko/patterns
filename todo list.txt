@@ -1,9 +1,8 @@
 bridge
-flyweight - ok
 facade - 50/50
-information expert - ok
 
-builder - ok
-singleton - ok
-pool - ok ?
 factory (method?)
+
+chain of responsibilities
+visitor
+strategy

@@ -39,3 +39,7 @@ ostream &operator<<(ostream &os, const Ticket &ticket) {
        << " allowedCargo: " << ticket.allowedCargo << " seatId: " << ticket.seatId << " id: " << ticket.id;
     return os;
 }
+
+time_t Ticket::getFlightTime() {
+    return flight->getTime();
+}

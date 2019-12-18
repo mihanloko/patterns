@@ -6,6 +6,6 @@
 
 PassportControl::PassportControl(int priority) : CompulsoryService(priority) {}
 
-void PassportControl::serve(Passenger *passenger) {
-
+bool PassportControl::serve(Passenger *passenger) {
+    return passenger->getFlight()->getChain()->handle(passenger);
 }

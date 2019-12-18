@@ -1,11 +1,6 @@
 #include <iostream>
 #include "passenger/Passenger.h"
-#include "passenger/OutgoingPassenger.h"
 #include "passenger/IncomingPassenger.h"
-#include "documents/Tickets/BusinessClassDecorator.h"
-#include "documents/Tickets/MoreCargoDecorator.h"
-#include "compulsory/GroupOfServices.h"
-#include "compulsory/BaggageService.h"
 #include "documents/Tickets/TicketPool.h"
 
 using namespace std;

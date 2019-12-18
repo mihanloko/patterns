@@ -8,6 +8,6 @@ Reception::Reception(int priority) : CompulsoryService(priority) {
     expert = InformationExpert::getInstance();
 }
 
-void Reception::serve(Passenger *passenger) {
-
+bool Reception::serve(Passenger *passenger) {
+    return true;
 }

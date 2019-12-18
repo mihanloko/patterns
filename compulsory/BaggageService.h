@@ -10,7 +10,7 @@
 
 class BaggageService : public CompulsoryService {
 public:
-    void serve(Passenger *passenger) override;
+    bool serve(Passenger *passenger) override;
 
     BaggageService(int priority);
 };

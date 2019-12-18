@@ -5,9 +5,10 @@
 #ifndef PATTERNS_TICKET_H
 #define PATTERNS_TICKET_H
 
-#include <ostream>
 #include "../Document.h"
 #include "../../flights/Flight.h"
+
+class Flight;
 
 /**
  * Билет на рейс
@@ -31,7 +32,9 @@ public:
 
     long long int getId() const;
 
-    friend ostream &operator<<(ostream &os, const Ticket &ticket);
+    friend std::ostream &operator<<(std::ostream &os, const Ticket &ticket);
+
+    time_t getFlightTime();
 };
 
 

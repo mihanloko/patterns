@@ -6,6 +6,6 @@
 
 CustomsControl::CustomsControl(int priority) : CompulsoryService(priority) {}
 
-void CustomsControl::serve(Passenger *passenger) {
-
+bool CustomsControl::serve(Passenger *passenger) {
+    return true;
 }

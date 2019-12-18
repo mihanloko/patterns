@@ -3,9 +3,16 @@
 //
 
 #include "OutgoingPassenger.h"
+#include "state/LotOfTimeState.h"
+#include "../compulsory/CompulsoryService.h"
 
-void OutgoingPassenger::visit(Ticket* ticket) {
-    for (const string& service: ticket->getFlight()->getRoute()) {
-        logger->info("I am visiting " + service);
+void OutgoingPassenger::visit(Ticket* ticket, Terminal *terminal, Passenger *passenger) {
+    for (auto i = terminal->getCompulsoryServices()->getForwardIterator(); i->hasNext(); ) {
+        i->getNext()->serve(passenger);
+        state->tryToVisitCommercial(ticket);
     }
+}
+
+OutgoingPassenger::OutgoingPassenger() {
+    this->state = new LotOfTimeState((IVisitingServices*)this);
 }

@@ -18,7 +18,7 @@ private:
     bool checkDocuments(Passenger *passenger);
 
 public:
-    void serve(Passenger *passenger) override;
+    bool serve(Passenger *passenger) override;
 };
 
 

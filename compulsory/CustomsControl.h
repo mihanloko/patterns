@@ -12,7 +12,7 @@ class CustomsControl : public CompulsoryService {
 public:
     CustomsControl(int priority);
 
-    void serve(Passenger *passenger) override;
+    bool serve(Passenger *passenger) override;
 };
 
 
