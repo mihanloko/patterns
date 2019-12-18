@@ -16,7 +16,7 @@ private:
 public:
     vector<ICompulsory *> getServices() override;
 
-    void serve(Passenger *passenger) override;
+    bool serve(Passenger *passenger) override;
 
     void addService(CompulsoryService *service);
 

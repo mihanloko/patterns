@@ -6,8 +6,13 @@
 #define PATTERNS_PASSPORTCONTROL_H
 
 
-class PassportControl {
+#include "CompulsoryService.h"
 
+class PassportControl : public CompulsoryService {
+public:
+    bool serve(Passenger *passenger) override;
+
+    PassportControl(int priority);
 };
 
 

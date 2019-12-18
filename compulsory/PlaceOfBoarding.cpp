@@ -4,6 +4,8 @@
 
 #include "PlaceOfBoarding.h"
 
-void PlaceOfBoarding::serve(Passenger *passenger) {
-
+bool PlaceOfBoarding::serve(Passenger *passenger) {
+    return true;
 }
+
+PlaceOfBoarding::PlaceOfBoarding(int priority) : CompulsoryService(priority) {}

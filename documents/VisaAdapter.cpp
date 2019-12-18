@@ -3,3 +3,11 @@
 //
 
 #include "VisaAdapter.h"
+
+string VisaAdapter::getName() {
+    return "Visa name";
+}
+
+string VisaAdapter::getNumber() {
+    return "visa number";
+}

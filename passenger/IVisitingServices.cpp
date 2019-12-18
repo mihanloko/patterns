@@ -3,3 +3,7 @@
 //
 
 #include "IVisitingServices.h"
+
+void IVisitingServices::setState(State *state) {
+    IVisitingServices::state = state;
+}

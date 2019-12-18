@@ -9,7 +9,12 @@
 #include "DocumentAdapter.h"
 
 class PassportAdapter : public DocumentAdapter {
+public:
+    PassportAdapter();
 
+    string getName() override;
+
+    string getNumber() override;
 };
 
 

@@ -10,6 +10,13 @@
 
 #include "../documents/Document.h"
 #include "IVisitingServices.h"
+#include "../documents/DocumentAdapter.h"
+#include "../documents/Tickets/Ticket.h"
+#include "../terminal/Terminal.h"
+
+class Ticket;
+class IVisitingServices;
+class Flight;
 
 using namespace std;
 
@@ -23,9 +30,15 @@ private:
     IVisitingServices* visitingServices;
 public:
     Passenger(IVisitingServices* iVisitingServices);
-    void visit();
+    void visit(Terminal *terminal);
 
     map<string, Document *> getDocuments();
+
+    Flight *getFlight();
+
+    DocumentAdapter *getPassport();
+    DocumentAdapter *getVisa();
+    DocumentAdapter *getInternationalPassport();
 };
 
 

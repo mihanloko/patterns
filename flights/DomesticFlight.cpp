@@ -3,7 +3,3 @@
 //
 
 #include "DomesticFlight.h"
-
-DomesticFlight::DomesticFlight(vector<string> route) {
-    this->route = route;
-}

@@ -4,11 +4,12 @@
 
 #include "BoardingProxy.h"
 
-void BoardingProxy::serve(Passenger *passenger) {
+bool BoardingProxy::serve(Passenger *passenger) {
     if (checkDocuments(passenger)) {
-        placeOfBoarding->serve(passenger);
+        return placeOfBoarding->serve(passenger);
     } else {
         logger->info("Пассажира не пустили");
+        return false;
     }
 }
 

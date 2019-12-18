@@ -9,7 +9,10 @@
 #include "DocumentAdapter.h"
 
 class VisaAdapter : public DocumentAdapter {
+public:
+    string getName() override;
 
+    string getNumber() override;
 };
 
 

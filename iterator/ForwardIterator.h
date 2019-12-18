@@ -7,7 +7,7 @@
 
 
 #include "Iterator.h"
-#include "../compulsory/ICompulsory.h"
+//#include "../compulsory/ICompulsory.h"
 
 
 class ForwardIterator : public Iterator {

@@ -4,9 +4,11 @@
 
 #include "GroupOfServices.h"
 
-void GroupOfServices::serve(Passenger *passenger) {
+bool GroupOfServices::serve(Passenger *passenger) {
+    bool res = true;
     for (CompulsoryService *service: services)
-        service->serve(passenger);
+        res &= service->serve(passenger);
+    return res;
 }
 
 void GroupOfServices::remove(CompulsoryService *service) {

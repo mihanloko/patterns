@@ -1,0 +1,8 @@
+bridge
+facade - 50/50
+
+factory (method?)
+
+chain of responsibilities
+visitor
+strategy

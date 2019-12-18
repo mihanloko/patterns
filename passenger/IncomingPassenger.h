@@ -21,7 +21,7 @@ class IncomingPassenger : public IVisitingServices {
 private:
     Logger* logger = new Logger("IncomingPassenger");
 public:
-    void visit(Ticket* ticket) override;
+    void visit(Ticket* ticket, Terminal *terminal, Passenger *passenger) override;
 };
 
 

@@ -3,3 +3,11 @@
 //
 
 #include "Reception.h"
+
+Reception::Reception(int priority) : CompulsoryService(priority) {
+    expert = InformationExpert::getInstance();
+}
+
+bool Reception::serve(Passenger *passenger) {
+    return true;
+}

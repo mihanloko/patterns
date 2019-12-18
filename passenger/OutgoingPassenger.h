@@ -11,6 +11,8 @@
 #include "IVisitingServices.h"
 #include "../Logger.h"
 
+class IVisitingServices;
+
 using namespace std;
 
 /**
@@ -20,7 +22,9 @@ class OutgoingPassenger : public IVisitingServices {
 private:
     Logger* logger = new Logger("OutgoingPassenger");
 public:
-    void visit(Ticket* ticket) override;
+    void visit(Ticket* ticket, Terminal *terminal, Passenger *passenger) override;
+
+    OutgoingPassenger();
 };
 
 

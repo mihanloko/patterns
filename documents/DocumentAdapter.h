@@ -18,10 +18,6 @@ public:
     virtual string getName() = 0;
 
     virtual string getNumber() = 0;
-
-    virtual string getSomething1() = 0;
-
-    virtual string getSomething2() = 0;
 };
 
 

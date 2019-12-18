@@ -3,3 +3,9 @@
 //
 
 #include "CustomsControl.h"
+
+CustomsControl::CustomsControl(int priority) : CompulsoryService(priority) {}
+
+bool CustomsControl::serve(Passenger *passenger) {
+    return true;
+}

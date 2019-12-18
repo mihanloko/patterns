@@ -7,6 +7,8 @@
 
 #include "Iterator.h"
 
+class Iterator;
+
 class Iterable {
 public:
     virtual Iterator *getForwardIterator() = 0;

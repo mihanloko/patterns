@@ -3,7 +3,7 @@
 //
 
 #include "ForwardIterator.h"
-#include "../compulsory/ICompulsory.h"
+//#include "../compulsory/ICompulsory.h"
 
 
 ForwardIterator::ForwardIterator(vector<ICompulsory *> list) {

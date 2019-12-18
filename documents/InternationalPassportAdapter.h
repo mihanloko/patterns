@@ -8,8 +8,10 @@
 
 #include "DocumentAdapter.h"
 
-class InternationalPassportAdapter : DocumentAdapter {
+class InternationalPassportAdapter : public DocumentAdapter {
+    string getName() override;
 
+    string getNumber() override;
 };
 
 
