@@ -14,7 +14,6 @@ Ticket::Ticket() {
     route.emplace_back("first service");
     route.emplace_back("second service");
     route.emplace_back("third service");
-    flight = new DomesticFlight(route);
 
 }
 
@@ -24,4 +23,19 @@ int Ticket::getCost() {
 
 int Ticket::getAllowedCargo() {
     return 20;
+}
+
+Ticket::Ticket(Flight *flight, int seatId, long long int id) : flight(flight), seatId(seatId), id(id) {
+    allowedCargo = 20;
+    cost = 100;
+}
+
+long long int Ticket::getId() const {
+    return id;
+}
+
+ostream &operator<<(ostream &os, const Ticket &ticket) {
+    os << "flight: " << ticket.flight << " cost: " << ticket.cost
+       << " allowedCargo: " << ticket.allowedCargo << " seatId: " << ticket.seatId << " id: " << ticket.id;
+    return os;
 }

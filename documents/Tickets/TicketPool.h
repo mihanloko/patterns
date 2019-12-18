@@ -6,6 +6,7 @@
 #define PATTERNS_TICKETPOOL_H
 
 #include <map>
+#include <string>
 #include "Ticket.h"
 
 using namespace std;
@@ -13,12 +14,15 @@ using namespace std;
 class TicketPool {
 private:
     static long long int idGenerator;
-    map<long long int, Ticket*> tickets;
+    vector<Ticket*> tickets;
+    map<pair<string, pair<string, time_t>>, Flight*> flightsPool;
 
 public:
-    Ticket* getTicket(long long int id);
+    Ticket* getTicket();
+    void removeTicket(Ticket *ticket);
 
-    void createTickets(int n, );
+    void createTickets(int n, string from, string to, time_t time);
+
 
 };
 

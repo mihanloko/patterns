@@ -6,11 +6,12 @@
 #include "documents/Tickets/MoreCargoDecorator.h"
 #include "compulsory/GroupOfServices.h"
 #include "compulsory/BaggageService.h"
+#include "documents/Tickets/TicketPool.h"
 
 using namespace std;
 
 int main() {
-    Passenger* passenger = new Passenger(new OutgoingPassenger());
+    /*Passenger* passenger = new Passenger(new OutgoingPassenger());
     passenger->visit();
 
     passenger = new Passenger(new IncomingPassenger());
@@ -47,7 +48,21 @@ int main() {
 
     for (auto i = groupOfServices->getBackwardIterator(); i->hasNext();) {
         i->getNext()->serve(passenger);
+    }*/
+
+    TicketPool *ticketPool = new TicketPool();
+    ticketPool->createTickets(10, "Barnaul", "Moscow", 1000000);
+    vector<Ticket*> tickets;
+    for (int i = 0; i < 11; i++) {
+        tickets.push_back(ticketPool->getTicket());
+        if (tickets.back() != nullptr)
+            cout << *tickets.back() << endl;
+        else
+            cout << 0 << endl;
     }
+
+    ticketPool->removeTicket(tickets[0]);
+    cout << *ticketPool->getTicket();
 
     return 0;
 }

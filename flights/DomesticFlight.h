@@ -17,7 +17,6 @@ using namespace std;
  */
 class DomesticFlight : public Flight {
 public:
-    DomesticFlight(vector<string> route);
 };
 
 

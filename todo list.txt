@@ -1,9 +1,9 @@
 bridge
-flyweight
+flyweight - ok
 facade - 50/50
 information expert - ok
 
 builder - ok
 singleton - ok
-pool
+pool - ok ?
 factory (method?)
