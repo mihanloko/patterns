@@ -7,7 +7,7 @@
 
 bool BaggageService::serve(Passenger *passenger) {
     Logger l("BaggageService");
-    l.info("Served " + to_string(priority));
+    l.info("Served ");
     return true;
 }
 

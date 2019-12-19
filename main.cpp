@@ -2,10 +2,13 @@
 #include "passenger/Passenger.h"
 #include "passenger/IncomingPassenger.h"
 #include "documents/Tickets/TicketPool.h"
+#include "terminal/TerminalBuilder.h"
+#include "passenger/OutgoingPassenger.h"
 
 using namespace std;
 
 int main() {
+    srand(time(nullptr));
     /*Passenger* passenger = new Passenger(new OutgoingPassenger());
     passenger->visit();
 
@@ -45,7 +48,7 @@ int main() {
         i->getNext()->serve(passenger);
     }*/
 
-    TicketPool *ticketPool = new TicketPool();
+    /*TicketPool *ticketPool = new TicketPool();
     ticketPool->createTickets(10, "Barnaul", "Moscow", 1000000);
     vector<Ticket*> tickets;
     for (int i = 0; i < 11; i++) {
@@ -57,7 +60,20 @@ int main() {
     }
 
     ticketPool->removeTicket(tickets[0]);
-    cout << *ticketPool->getTicket();
+    cout << *ticketPool->getTicket();*/
+
+
+
+    Passenger *passenger = new Passenger(new OutgoingPassenger());
+
+    TerminalBuilder *terminalBuilder = new TerminalBuilder();
+    terminalBuilder->addBank();
+    terminalBuilder->addCafe();
+    terminalBuilder->addHotel();
+    terminalBuilder->addWaitingRoom();
+    Terminal *terminal = terminalBuilder->getTerminal();
+    terminal->visit(passenger);
+
 
     return 0;
 }

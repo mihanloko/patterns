@@ -5,6 +5,8 @@
 #include "PlaceOfBoarding.h"
 
 bool PlaceOfBoarding::serve(Passenger *passenger) {
+    Logger l("PlaceOfBoarding");
+    l.info("Served");
     return true;
 }
 

@@ -7,9 +7,10 @@
 #include "../compulsory/CompulsoryService.h"
 
 void OutgoingPassenger::visit(Ticket* ticket, Terminal *terminal, Passenger *passenger) {
-    for (auto i = terminal->getCompulsoryServices()->getForwardIterator(); i->hasNext(); ) {
-        i->getNext()->serve(passenger);
-        state->tryToVisitCommercial(ticket);
+    bool f = true;
+    for (auto i = terminal->getCompulsoryServices()->getForwardIterator(); i->hasNext() && f; ) {
+        f &= i->getNext()->serve(passenger);
+        if (f) state->tryToVisitCommercial(ticket);
     }
 }
 

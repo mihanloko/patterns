@@ -26,6 +26,7 @@ void LotOfTimeState::tryToVisitCommercial(Ticket *ticket) {
         }
     }
     else {
+        logger->info("Остается мало времени, не буду никуда ходить");
         visitingServices->setState(new FewTimeState(visitingServices));
     }
 
