@@ -48,7 +48,7 @@ int main() {
         i->getNext()->serve(passenger);
     }*/
 
-    /*TicketPool *ticketPool = new TicketPool();
+    TicketPool *ticketPool = new TicketPool();
     ticketPool->createTickets(10, "Barnaul", "Moscow", 1000000);
     vector<Ticket*> tickets;
     for (int i = 0; i < 11; i++) {
@@ -60,11 +60,11 @@ int main() {
     }
 
     ticketPool->removeTicket(tickets[0]);
-    cout << *ticketPool->getTicket();*/
+    cout << *ticketPool->getTicket();
 
 
 
-    Passenger *passenger = new Passenger(new OutgoingPassenger());
+    /*Passenger *passenger = new Passenger(new OutgoingPassenger());
 
     TerminalBuilder *terminalBuilder = new TerminalBuilder();
     terminalBuilder->addBank();
@@ -72,7 +72,7 @@ int main() {
     terminalBuilder->addHotel();
     terminalBuilder->addWaitingRoom();
     Terminal *terminal = terminalBuilder->getTerminal();
-    terminal->visit(passenger);
+    terminal->visit(passenger);*/
 
 
     return 0;

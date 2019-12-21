@@ -7,10 +7,18 @@
 long long int TicketPool::idGenerator = 0;
 
 Ticket *TicketPool::getTicket() {
+    this->save();
     Ticket *ticket = nullptr;
     if (!tickets.empty()) {
         ticket = tickets.back();
         tickets.pop_back();
+        Logger l("TicketPool");
+        if (rand() % 10 == 0) {
+            l.info("Не удалось получить билет, восстановить состояние");
+            this->restore();
+        } else {
+            l.info("Билет получен удачно");
+        }
     }
     return ticket;
 }
@@ -29,4 +37,16 @@ void TicketPool::createTickets(int n, string from, string to, time_t time) {
 
 void TicketPool::removeTicket(Ticket *ticket) {
     tickets.push_back(ticket);
+}
+
+void TicketPool::save() {
+    this->memento = new Memento(idGenerator, tickets, flightsPool);
+}
+
+void TicketPool::restore() {
+    if (memento != nullptr) {
+        TicketPool::idGenerator = memento->idGenerator;
+        this->tickets = memento->tickets;
+        this->flightsPool = memento->flightsPool;
+    }
 }
