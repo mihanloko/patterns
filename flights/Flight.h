@@ -9,29 +9,36 @@
 #include <string>
 #include <ctime>
 #include "../passport_control/CheckHandler.h"
+//#include "FlightVisitor.h"
 
 using namespace std;
 
 class CheckHandler;
 
+class FlightVisitor;
+
 /**
- * Авиарейс, абстрактный класс
+ * Авиарейс, абстрактный класс (уже нет, хотя в тоерии да)
  */
 class Flight {
 protected:
-    vector<string> route;
     string from;
     string to;
     time_t time;
 
 public:
-    const virtual vector<string> &getRoute() const;
 
     Flight(const string &from, const string &to, time_t time);
 
     virtual CheckHandler *getChain();
 
-    time_t getTime() const;
+    virtual time_t getTime();
+
+    virtual string acceptVisitor(FlightVisitor *flightVisitor);
+
+    virtual const string &getFrom() const;
+
+    virtual const string &getTo() const;
 };
 
 

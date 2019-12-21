@@ -1,9 +1,14 @@
-#include <iostream>
-#include "passenger/Passenger.h"
-#include "passenger/IncomingPassenger.h"
-#include "documents/Tickets/TicketPool.h"
-#include "terminal/TerminalBuilder.h"
-#include "passenger/OutgoingPassenger.h"
+//#include <iostream>
+//#include "passenger/Passenger.h"
+//#include "passenger/IncomingPassenger.h"
+//#include "documents/Tickets/TicketPool.h"
+//#include "terminal/TerminalBuilder.h"
+//#include "passenger/OutgoingPassenger.h"
+//#include "flights/SimpleFlightVisitor.h"
+#include "flights/SimpleFlightVisitor.h"
+
+#include <ctime>
+#include <random>
 
 using namespace std;
 
@@ -48,7 +53,7 @@ int main() {
         i->getNext()->serve(passenger);
     }*/
 
-    TicketPool *ticketPool = new TicketPool();
+    /*TicketPool *ticketPool = new TicketPool();
     ticketPool->createTickets(10, "Barnaul", "Moscow", 1000000);
     vector<Ticket*> tickets;
     for (int i = 0; i < 11; i++) {
@@ -60,7 +65,7 @@ int main() {
     }
 
     ticketPool->removeTicket(tickets[0]);
-    cout << *ticketPool->getTicket();
+    cout << *ticketPool->getTicket();*/
 
 
 
@@ -73,6 +78,13 @@ int main() {
     terminalBuilder->addWaitingRoom();
     Terminal *terminal = terminalBuilder->getTerminal();
     terminal->visit(passenger);*/
+
+    SimpleFlightVisitor *simpleFlightVisitor = new SimpleFlightVisitor();
+    Flight *directFlight = new DirectFlight("Барнаул", "Москва", time(nullptr));
+    Flight *transferFlight = new TransferFlight("Барнаул", "Москва", time(nullptr), "Новосибирск");
+//    simpleFlightVisitor->visitDirectFlight(directFlight);
+    cout << directFlight->acceptVisitor(simpleFlightVisitor) << endl;
+    cout << transferFlight->acceptVisitor(simpleFlightVisitor) << endl;
 
 
     return 0;

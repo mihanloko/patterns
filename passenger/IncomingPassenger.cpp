@@ -3,10 +3,12 @@
 //
 
 #include "IncomingPassenger.h"
+#include "state/LotOfTimeState.h"
+#include "../compulsory/CompulsoryService.h"
 
-void IncomingPassenger::visit(Ticket* ticket, Terminal *terminal, Passenger *passenger) {
-    vector<string> route = ticket->getFlight()->getRoute();
-    for (auto service = route.rbegin(); service != route.rend(); service++) {
-        logger->info("I am visiting " + *service);
+void IncomingPassenger::visit(Ticket *ticket, Terminal *terminal, Passenger *passenger) {
+    bool f = true;
+    for (auto i = terminal->getCompulsoryServices()->getBackwardIterator(); i->hasNext() && f;) {
+        f &= i->getNext()->serve(passenger);
     }
 }

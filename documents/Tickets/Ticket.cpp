@@ -3,7 +3,6 @@
 //
 
 #include "Ticket.h"
-#include "../../flights/DomesticFlight.h"
 
 Flight *Ticket::getFlight() const {
     return flight;
