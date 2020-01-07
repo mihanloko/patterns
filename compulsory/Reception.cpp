@@ -9,5 +9,7 @@ Reception::Reception(int priority) : CompulsoryService(priority) {
 }
 
 bool Reception::serve(Passenger *passenger) {
+    Logger l("Reception");
+    l.info("Served");
     return true;
 }

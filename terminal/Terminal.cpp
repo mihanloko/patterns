@@ -18,7 +18,7 @@ Terminal::Terminal() {
     groupOfServices->addService(new CustomsControl(40));
 
     all->addService(new Reception(5));
-    all->addService(new PassportControl(90));
+    all->addService(groupOfServices);
     all->addService(new PassportControl(90));
     all->addService(new PlaceOfBoarding(100));
 

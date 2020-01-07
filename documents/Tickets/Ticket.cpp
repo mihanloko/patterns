@@ -3,18 +3,13 @@
 //
 
 #include "Ticket.h"
-#include "../../flights/DomesticFlight.h"
 
 Flight *Ticket::getFlight() const {
     return flight;
 }
 
 Ticket::Ticket() {
-    vector<string> route;
-    route.emplace_back("first service");
-    route.emplace_back("second service");
-    route.emplace_back("third service");
-
+    this->flight = new Flight("barnaul", "moscow", time(nullptr) + 60*40);
 }
 
 int Ticket::getCost() {

@@ -7,5 +7,7 @@
 CustomsControl::CustomsControl(int priority) : CompulsoryService(priority) {}
 
 bool CustomsControl::serve(Passenger *passenger) {
+    Logger l("CustomsControl");
+    l.info("Served");
     return true;
 }
